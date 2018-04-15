@@ -28,7 +28,11 @@
             type: 'GET',
             success: function(res) {
                 var data = JSON.parse(res).list;
-                console.log(res);
+                var str = '';
+                $.each(data, function(i, v) {
+                    str += `<li>${v.text}</li>`
+                })
+                $('section').append(str)
             },
             error: function(err) {
                 console.warn(err.err);
