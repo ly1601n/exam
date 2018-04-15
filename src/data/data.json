@@ -1,3 +1,9 @@
 {
-    "text": "one"
+    "list": [{
+        "text": "one"
+    }, {
+        "text": "one"
+    }, {
+        "text": "one"
+    }]
 }
